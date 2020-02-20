@@ -1,0 +1,33 @@
+list1=[]
+
+def totalprice(n,p):
+    list1.append(n)
+    list1.append(p)
+    
+def main():
+    
+    qu="1"
+    while qu!="0":
+     name=input("type item name:")
+     num=input("type item price:$")
+     totalprice(name,num)
+     qu=input("if you finished type '0' else type something:")        
+     
+     
+    
+         
+        
+          
+main()
+tp=0
+pf=0
+a=len(list1)
+for i in range (1,a,2):
+  it= float( list1[i])
+  pf=it*24/100+pf
+  tp=tp+it+pf
+tpf=pf/tp*100  
+print("total prize=",tp,"tax persentage=",tpf,"%")  
+    
+
+     
